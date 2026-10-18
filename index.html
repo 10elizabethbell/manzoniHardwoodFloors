@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manzoni Hardwood Floors · Northern NJ</title>
+<meta name="description" content="Hardwood floor installation, sand and refinish, and repairs in Northern New Jersey. Fully insured. Free estimates. Call or text Kevin at 410-845-0812.">
+<meta name="theme-color" content="#f4eee4">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Manzoni Hardwood Floors">
+<meta property="og:description" content="Installation, sand & refinish, repairs. Northern NJ. Fully insured, free estimates. Call or text Kevin.">
+<meta property="og:url" content="https://10elizabethbell.github.io/manzoniHardwoodFloors/">
+<meta property="og:image" content="https://10elizabethbell.github.io/manzoniHardwoodFloors/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%234a2f1e'/%3E%3Cpath d='M14 48V16h8l10 16 10-16h8v32h-8V30l-10 15-10-15v18z' fill='%23e3c79c'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  --ground:#f4eee4;      /* trim-white wall, warm */
+  --ground-2:#ebe2d4;    /* sanded oak dust */
+  --ink:#2e1f15;         /* walnut ink */
+  --ink-soft:#5f4838;
+  --walnut:#4a2f1e;      /* Special Walnut */
+  --walnut-deep:#36221a;
+  --oak:#d9b98c;         /* raw sanded oak */
+  --tape:#2a67a8;        /* painter's tape blue: hover, focus, form outlines only */
+  --seam:rgba(46,31,21,.16);
+  --radius:6px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 17px/1.55 var(--font);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+::selection{background:var(--oak);color:var(--ink)}
+:focus-visible{outline:3px solid var(--tape);outline-offset:3px;border-radius:4px}
+input,textarea{caret-color:var(--tape)}
+html{scrollbar-color:var(--walnut) var(--ground-2)}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{margin:0;font-weight:850;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;text-wrap:balance}
+h2{font-size:clamp(34px,9vw,64px)}
+p{margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Buttons ---------- */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 24px;border-radius:var(--radius);font:750 17px/1.1 var(--font);text-decoration:none;border:2px solid var(--walnut);transition:background-color .18s,border-color .18s,color .18s,box-shadow .18s;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.btn-solid{background:var(--walnut);color:#f7efe2;box-shadow:0 6px 16px -8px rgba(54,34,26,.7)}
+.btn-solid:hover{background:var(--walnut-deep);border-color:var(--tape)}
+.btn-line{background:transparent;color:var(--walnut)}
+.btn-line:hover{border-color:var(--tape);color:var(--tape)}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* ---------- Header ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:max(14px,env(safe-area-inset-top));padding-bottom:14px}
+.mark{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
+.mark b{font-weight:900;font-size:21px;letter-spacing:.01em;text-transform:uppercase}
+.mark span{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
+.tel{display:flex;align-items:center;min-height:44px;padding:0 2px;font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tel:hover{color:var(--tape)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative}
+.hero-copy{padding-top:18px;padding-bottom:22px}
+.hero h1{font-size:clamp(54px,17.5vw,124px);line-height:.86;letter-spacing:-.035em}
+.promise{margin-top:16px;font-size:clamp(17px,4.6vw,20px);line-height:1.45;max-width:31ch;color:var(--ink-soft)}
+.cta{display:grid;gap:12px;margin-top:22px}
+.floor-wrap{position:relative;height:clamp(200px,32svh,320px);background:#c9a679}
+.floor-wrap canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;user-select:none;-webkit-user-select:none;cursor:crosshair}
+.floor-fallback{position:absolute;inset:0;background:
+  repeating-linear-gradient(180deg,transparent 0 31px,rgba(70,40,20,.35) 31px 32px),
+  linear-gradient(90deg,#3f2819 0 52%,#d3b384 52%)}
+.hint{position:absolute;left:12px;bottom:12px;margin:0;padding:6px 10px;border-radius:4px;background:rgba(46,31,21,.86);font-size:14px;font-weight:700;color:#f7efe2;pointer-events:none;transition:opacity .6s}
+.hint.gone{opacity:0}
+
+/* ---------- Course divider (one strip of floor) ---------- */
+.course{position:relative;height:52px;background:#c9a679}
+.course canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;cursor:crosshair}
+
+/* ---------- Sections ---------- */
+section{padding:64px 0}
+.facts{margin-top:18px;color:var(--ink-soft);font-weight:650}
+.facts span+span::before{content:"·";margin:0 .55em;color:var(--oak)}
+
+/* services: rows, only the arrow reacts */
+.rows{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--seam)}
+.rows li{position:relative;border-bottom:1px solid var(--seam)}
+.rows li::after{content:"";position:absolute;bottom:-1px;width:1px;height:12px;background:var(--seam);left:var(--joint,40%)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:10px 0;text-decoration:none;-webkit-tap-highlight-color:transparent}
+.row strong{font-size:clamp(24px,6.6vw,34px);font-weight:820;text-transform:uppercase;letter-spacing:-.015em;line-height:1}
+.arrow{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--ground-2);color:var(--walnut);transition:background-color .18s,color .18s}
+.arrow svg{width:20px;height:20px}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--tape);color:#fff}
+.row:focus-visible .arrow{outline:3px solid var(--tape);outline-offset:3px}
+
+/* care */
+.care{background:var(--walnut);color:#f3e8d8}
+.care h2{color:#f7efe2}
+.care p{margin-top:20px;font-size:clamp(18px,4.8vw,22px);line-height:1.5;max-width:36ch;color:#e6d4bd}
+.care p.spec{font-size:17px;font-weight:750;color:var(--oak);margin-top:26px}
+
+/* work: photos set into the floor like an inlay */
+.inlays{display:grid;gap:18px;margin-top:28px}
+.inlay{margin:0;padding:10px;border-radius:4px;background:var(--walnut) var(--strip,none) center/cover;box-shadow:0 18px 30px -18px rgba(46,31,21,.55),inset 0 0 0 1px rgba(20,10,5,.35)}
+.inlay img{width:100%;border-radius:2px;background:#5a3b27;user-select:none;-webkit-user-drag:none}
+.fb{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;min-height:68px;padding:12px 20px;border-radius:var(--radius);background:var(--ground-2);border:2px solid var(--walnut);text-decoration:none;font-weight:800;font-size:18px;transition:border-color .18s,color .18s}
+.fb .arrow{background:var(--walnut);color:#f7efe2}
+.fb:hover{border-color:var(--tape);color:var(--tape)}
+.fb:hover .arrow{background:var(--tape)}
+
+/* steps */
+.steps{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:20px 0;border-top:1px solid var(--seam);counter-increment:s}
+.steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--oak);color:var(--ink);font-weight:850;font-size:19px}
+.steps b{font-size:20px;font-weight:800;line-height:1.25}
+.steps span{color:var(--ink-soft)}
+
+/* estimate form */
+.estimate{background:var(--ground-2)}
+form{margin-top:26px;display:grid;gap:20px;max-width:640px}
+label,.legend{display:block;font-weight:750;font-size:16px;margin-bottom:8px}
+.opt{font-weight:500;color:var(--ink-soft)}
+input[type=text],textarea{width:100%;min-height:54px;padding:14px 16px;font:400 17px/1.4 var(--font);color:var(--ink);background:#fffdf9;border:2px solid rgba(74,47,30,.28);border-radius:var(--radius);transition:border-color .15s,box-shadow .15s}
+textarea{min-height:110px;resize:vertical}
+input[type=text]:hover,textarea:hover{border-color:var(--tape)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--tape);box-shadow:0 0 0 3px rgba(42,103,168,.22)}
+input::placeholder,textarea::placeholder{color:#7d6656}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border:2px solid rgba(74,47,30,.28);border-radius:var(--radius);background:#fffdf9;font-weight:650;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}
+.chip span::before{content:"";width:16px;height:16px;border-radius:3px;border:2px solid var(--ink-soft);flex:none;transition:background-color .15s,border-color .15s}
+.chip:hover span{border-color:var(--tape)}
+.chip input:focus-visible+span{border-color:var(--tape);box-shadow:0 0 0 3px rgba(42,103,168,.22)}
+.chip input:checked+span{background:var(--walnut);border-color:var(--walnut);color:#f7efe2}
+.chip input:checked+span::before{background:var(--oak);border-color:var(--oak)}
+.chip input:checked:hover+span{border-color:var(--tape)}
+.err{display:none;margin-top:6px;color:#a3321c;font-weight:650;font-size:15px}
+.bad .err{display:block}
+.bad input{border-color:#a3321c}
+form .btn{width:100%}
+form .btn:hover,form .btn:focus-visible{border-color:var(--tape);box-shadow:0 0 0 3px rgba(42,103,168,.22)}
+.sub{font-size:15px;color:var(--ink-soft);margin-top:10px}
+.sent{display:none;margin-top:4px;padding:16px;border-radius:var(--radius);background:#fffdf9;border:1px solid var(--seam)}
+.sent.on{display:block}
+.sent pre{white-space:pre-wrap;font:400 15px/1.45 var(--font);margin:10px 0 12px;color:var(--ink-soft)}
+.sent .row2{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.linkbtn{min-height:44px;padding:0 14px;border-radius:var(--radius);border:2px solid rgba(74,47,30,.28);background:transparent;font:700 15px var(--font);color:var(--ink);cursor:pointer}
+.linkbtn:hover,.linkbtn:focus-visible{border-color:var(--tape)}
+
+/* close */
+.close{padding-bottom:40px}
+.close h2{font-size:clamp(40px,12vw,104px);line-height:.88}
+.close .where{margin-top:18px;font-size:20px;font-weight:650;color:var(--ink-soft)}
+.close .cta{max-width:420px}
+.close .bigtel{display:inline-block;margin-top:22px;font-size:clamp(28px,8vw,44px);font-weight:850;text-decoration:none;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.close .bigtel:hover{color:var(--tape)}
+
+/* footer */
+footer{background:var(--walnut-deep);color:#e6d4bd;padding:34px 0 calc(34px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:10px}
+footer b{color:#f7efe2;text-transform:uppercase;letter-spacing:.04em}
+footer a{min-height:44px;display:inline-flex;align-items:center}
+footer a:hover{color:#fff}
+footer small{color:#bfa78d;font-size:14px}
+
+/* ---------- Desktop ---------- */
+@media (min-width:720px){
+  .wrap{padding:0 40px}
+  .cta{grid-template-columns:auto auto;justify-content:start}
+  .inlays{grid-template-columns:1.38fr 1fr;align-items:start}
+  .course{height:64px}
+  .tel{font-size:18px}
+}
+@media (min-width:1024px){
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);min-height:min(88svh,780px)}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:40px 48px 64px max(40px,calc((100vw - 1180px)/2 + 40px))}
+  .floor-wrap{height:auto;min-height:520px}
+  .hero h1{font-size:clamp(84px,9.4vw,136px)}
+  section{padding:104px 0}
+  .split{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .split .rows,.split .steps{margin-top:0}
+  .estimate .split form{margin-top:0}
+  .close .inner{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:end}
+  .rows li:nth-child(1){--joint:62%}.rows li:nth-child(2){--joint:28%}.rows li:nth-child(3){--joint:79%}
+}
+.rows li:nth-child(1){--joint:66%}.rows li:nth-child(2){--joint:24%}.rows li:nth-child(3){--joint:81%}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<!--
+THESIS: Kevin takes a floor from torn-up to Special Walnut and three coats of poly, start to finish, by himself. The page is that floor.
+OWN-WORLD: A racked-out hardwood floor seen from above: random-length oak strips, staggered joints, Special Walnut wiped into raw sanded oak. Trim-white walls (the cream ground), walnut ink, painter's-tape blue only where the visitor touches a control.
+STORY: The visitor stains the floor with a finger, sees two of Kevin's real jobs set into the floor like inlays, learns it's three steps and free to ask, and texts him a photo.
+FIRST VIEWPORT: Name + tap-to-call number up top; "Start to finish." as the one focal point; one line of promise; "Text Kevin a photo" (solid) and "Free estimate" (outline); a strip of floor along the bottom that is being stained right now and stains wherever you drag.
+FORM: Static single file. One shared animation loop drives the hero floor and the course dividers (the same engine). Wet stain spreads fast along the grain, slowly across, barely over seams; a sanding pass lifts it back to raw so there's always floor to stain.
+-->
+<header class="wrap top">
+  <a class="mark" href="#top" aria-label="Manzoni Hardwood Floors, back to top"><b>Manzoni</b><span>Hardwood Floors</span></a>
+  <a class="tel" href="tel:+14108450812">410-845-0812</a>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap hero-copy">
+    <h1>Start to finish.</h1>
+    <p class="promise">I handle your floor myself, from the first board pulled to the last coat of poly, and I treat your home like it's my own.</p>
+    <div class="cta">
+      <a class="btn btn-solid" data-sms="Hi Kevin, I found your website. Here's a photo of my floor. I'm looking for:" href="sms:+14108450812">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+        Text Kevin a photo
+      </a>
+      <a class="btn btn-line" href="#estimate">Free estimate</a>
+    </div>
+  </div>
+  <div class="floor-wrap" id="hero-floor">
+    <div class="floor-fallback" aria-hidden="true"></div>
+    <canvas aria-label="A hardwood floor. Drag across it to wipe on Special Walnut stain." role="img"></canvas>
+    <p class="hint" aria-hidden="true">Drag to stain</p>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap split">
+    <div>
+      <h2>What I do</h2>
+      <p class="facts"><span>Fully insured</span><span>Free estimates</span></p>
+    </div>
+    <ul class="rows">
+      <li><a class="row" data-sms="Hi Kevin, I'd like a free estimate on hardwood installation." href="sms:+14108450812"><strong>Installation</strong><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a class="row" data-sms="Hi Kevin, I'd like a free estimate on a sand & refinish." href="sms:+14108450812"><strong>Sand &amp; refinish</strong><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a class="row" data-sms="Hi Kevin, I'd like a free estimate on a floor repair." href="sms:+14108450812"><strong>Repairs</strong><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="course" aria-hidden="true"><canvas></canvas></div>
+
+<section class="care">
+  <div class="wrap">
+    <h2>Big repairs are part of the job</h2>
+    <p>When boards are damaged, I don't sand around them. I pull them, weave in new ones, and sand the whole floor together so you can't tell where the old floor ends and the new one starts.</p>
+    <p class="spec">Last job: Special Walnut stain, 3 coats of polyurethane</p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>My work</h2>
+    <div class="inlays">
+      <figure class="inlay"><img src="img/repair.webp" width="936" height="700" alt="A living room floor torn up in front of an arched wooden door, with new oak boards stacked and ready to weave in" loading="lazy" decoding="async" draggable="false"></figure>
+      <figure class="inlay"><img src="img/finished.webp" width="720" height="676" alt="A finished floor in a dark walnut stain, seen from the top of a curved white staircase" loading="lazy" decoding="async" draggable="false"></figure>
+    </div>
+    <a class="fb" href="https://facebook.com/profile.php?id=100057250275824" rel="noopener">Click to see more of my work.<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+</section>
+
+<div class="course" aria-hidden="true"><canvas></canvas></div>
+
+<section id="how">
+  <div class="wrap split">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Text me a photo of your floor.</b><span>Tell me what you're hoping for.</span></li>
+      <li><b>I come look, and the estimate is free.</b><span>You'll know what the job needs before anything starts.</span></li>
+      <li><b>I do it start to finish.</b><span>Sanding, repairs, stain and finish, all by me.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="estimate" id="estimate">
+  <div class="wrap split">
+    <div>
+      <h2>Free estimate</h2>
+      <p class="sub" style="font-size:17px;margin-top:16px;max-width:30ch">Fill this in and it becomes a text to me. Add a photo of the floor before you send it.</p>
+    </div>
+    <form id="est" novalidate>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="First and last">
+        <p class="err" id="e-name">Please add your name so I know who's texting.</p>
+      </div>
+      <div class="field" id="f-town">
+        <label for="town">Town</label>
+        <input type="text" id="town" name="town" autocomplete="address-level2" placeholder="Where's the floor?">
+        <p class="err" id="e-town">Please add your town so I know where the job is.</p>
+      </div>
+      <fieldset>
+        <legend class="legend">What do you need? <span class="opt">Pick any</span></legend>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="job" value="Installation"><span>Installation</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Sand & refinish"><span>Sand &amp; refinish</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Repairs"><span>Repairs</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Not sure yet"><span>Not sure yet</span></label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="notes">About the floor <span class="opt">optional</span></label>
+        <textarea id="notes" name="notes" placeholder="Which rooms, roughly how big, any damage, the color you want"></textarea>
+      </div>
+      <div>
+        <button class="btn btn-solid" type="submit">Text this to Kevin</button>
+        <p class="sub">Opens your messages with this already written. Nothing is sent until you hit send.</p>
+      </div>
+      <div class="sent" id="sent" role="status" aria-live="polite">
+        <b>Your text is ready.</b> If your messages app didn't open, send this to 410-845-0812:
+        <pre id="msg"></pre>
+        <div class="row2"><button class="linkbtn" type="button" id="copy">Copy message</button><a class="linkbtn" style="display:inline-flex;align-items:center;text-decoration:none" href="tel:+14108450812">Call instead</a></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="course" aria-hidden="true"><canvas></canvas></div>
+
+<section class="close">
+  <div class="wrap inner">
+    <div>
+      <h2>Manzoni Hardwood Floors</h2>
+      <p class="where">Northern New Jersey. Call or text Kevin.</p>
+    </div>
+    <div>
+      <a class="bigtel" href="tel:+14108450812">410-845-0812</a>
+      <div class="cta"><a class="btn btn-solid" data-sms="Hi Kevin, I found your website and I'd like a free estimate." href="sms:+14108450812">Text Kevin</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Manzoni Hardwood Floors</b>
+    <span>Installation · Sand &amp; refinish · Repairs · Northern NJ</span>
+    <a href="tel:+14108450812">410-845-0812</a>
+    <a href="https://facebook.com/profile.php?id=100057250275824" rel="noopener">Facebook</a>
+    <small>Fully insured. Free estimates.</small>
+  </div>
+</footer>
+
+<script>
+/* ---------- Text links: pre-filled message bodies ---------- */
+(function(){
+  var NUM = '+14108450812';
+  document.querySelectorAll('[data-sms]').forEach(function(a){
+    a.href = 'sms:' + NUM + '?&body=' + encodeURIComponent(a.getAttribute('data-sms'));
+  });
+})();
+
+/* ---------- Floor engine: racked oak strips + wet stain ---------- */
+(function(){
+  /* tunables */
+  var CELL = 5;            // stain grid cell, css px
+  var ALONG = 0.22;        // wet flow along the grain (same board)
+  var ACROSS = 0.05;       // wet flow across the board width
+  var SEAM = 0.004;        // wet flow over a seam (next row or butt joint)
+  var SOAK = 0.07;         // share of wet stain absorbed per tick
+  var DRY = 0.992;         // wet evaporation per tick
+  var BRUSH = 1.25;        // rag radius, in rows
+  var AUTO_SPEED = 560;    // rag speed, css px/s
+  var SAND_SPEED = 340;    // sander speed, css px/s
+  var SAND_AT = 0.9;       // coverage that starts a sanding pass
+  var IDLE = 2600;         // ms after a touch before the floor works by itself
+
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var floors = [];
+
+  function rng(seed){ return function(){ seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }; }
+
+  function Floor(canvas, o){
+    this.c = canvas; this.ctx = canvas.getContext('2d');
+    this.o = o; this.w = 0; this.h = 0; this.visible = false;
+    this.ptr = null; this.lastTouch = -1e9; this.mode = 'stain';
+    this.auto = null; this.sand = null; this.dust = [];
+    this.raw = document.createElement('canvas'); this.stained = document.createElement('canvas');
+    this.mask = document.createElement('canvas'); this.tmp = document.createElement('canvas');
+    this.bind();
+  }
+
+  Floor.prototype.build = function(){
+    var r = this.c.getBoundingClientRect();
+    var w = Math.round(r.width), h = Math.round(r.height);
+    if (!w || !h || (w === this.w && h === this.h)) return;   // address-bar resizes don't wipe the floor
+    this.w = w; this.h = h;
+    var dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    this.dpr = dpr;
+    [this.c, this.raw, this.stained, this.tmp].forEach(function(cv){ cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); });
+    var rowH = this.o.rowH(w), rows = Math.ceil(h / rowH) + 1, seed = this.o.seed;
+    this.rowH = rowH;
+    // rack out the boards: random lengths, joints kept off the row above
+    var R = rng(seed), layout = [], prevJoints = [];
+    for (var y = 0; y < rows; y++){
+      var boards = [], x = -R() * rowH * 9, joints = [];
+      while (x < w){
+        var len = rowH * (4 + R() * 11);
+        for (var t = 0; t < 6; t++){
+          var end = x + len, ok = true;
+          for (var j = 0; j < prevJoints.length; j++) if (Math.abs(prevJoints[j] - end) < rowH * 1.6) ok = false;
+          if (ok) break; len = rowH * (4 + R() * 11);
+        }
+        boards.push({x:x, y:y * rowH, w:len, h:rowH, seed:Math.floor(R() * 1e9) + 1});
+        joints.push(x + len); x += len;
+      }
+      prevJoints = joints; layout.push(boards);
+    }
+    this.layout = layout;
+    this.paint(this.raw, RAW); this.paint(this.stained, WALNUT);
+    // stain grid
+    var gw = Math.ceil(w / CELL), gh = Math.ceil(h / CELL);
+    this.gw = gw; this.gh = gh;
+    this.mask.width = gw; this.mask.height = gh;
+    this.mctx = this.mask.getContext('2d'); this.img = this.mctx.createImageData(gw, gh);
+    this.stain = new Float32Array(gw * gh); this.wet = new Float32Array(gw * gh); this.nwet = new Float32Array(gw * gh);
+    this.row = new Int16Array(gw * gh); this.board = new Int32Array(gw * gh); this.pore = new Float32Array(gw * gh);
+    var id = 0, ids = [];
+    for (y = 0; y < layout.length; y++){ ids.push([]); for (var b = 0; b < layout[y].length; b++) ids[y].push(id++); }
+    var PR = rng(seed + 7);
+    for (var gy = 0; gy < gh; gy++){
+      var cy = (gy + .5) * CELL, ry = Math.floor(cy / rowH);
+      for (var gx = 0; gx < gw; gx++){
+        var cx = (gx + .5) * CELL, k = gy * gw + gx, bs = layout[ry];
+        this.row[k] = ry;
+        for (b = 0; b < bs.length; b++) if (cx >= bs[b].x && cx < bs[b].x + bs[b].w){ this.board[k] = ids[ry][b]; break; }
+        // open grain soaks more: streaks running along the board
+        this.pore[k] = .72 + .28 * Math.abs(Math.sin(cy * .9 + Math.sin(cx * .013 + ry) * 2.2)) + PR() * .08;
+      }
+    }
+    this.o.start(this);
+    this.draw();
+  };
+
+  var RAW = {
+    base: function(R){ return 'hsl(' + (30 + R() * 6) + ',' + (44 + R() * 10) + '%,' + (66 + R() * 9) + '%)'; },
+    grain: function(R){ return 'rgba(124,74,36,' + (.16 + R() * .2) + ')'; },
+    fleck: 'rgba(255,241,218,.32)', seam: 'rgba(96,58,30,.5)', shade: .1
+  };
+  var WALNUT = {
+    base: function(R){ return 'hsl(' + (20 + R() * 6) + ',' + (36 + R() * 10) + '%,' + (16 + R() * 7) + '%)'; },
+    grain: function(R){ return R() < .55 ? 'rgba(12,6,3,' + (.35 + R() * .25) + ')' : 'rgba(176,124,82,' + (.16 + R() * .16) + ')'; },
+    fleck: 'rgba(196,146,98,.2)', seam: 'rgba(10,5,2,.65)', shade: .18
+  };
+
+  Floor.prototype.paint = function(cv, P){
+    var ctx = cv.getContext('2d'), d = this.dpr;
+    ctx.setTransform(d, 0, 0, d, 0, 0);
+    this.layout.forEach(function(row){ row.forEach(function(bd){ board(ctx, bd, P); }); });
+  };
+
+  function board(ctx, bd, P){
+    var R = rng(bd.seed), x = bd.x, y = bd.y, w = bd.w, h = bd.h;
+    ctx.save(); ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+    ctx.fillStyle = P.base(R); ctx.fillRect(x, y, w, h);
+    var g = ctx.createLinearGradient(x, 0, x + w, 0);
+    g.addColorStop(0, 'rgba(0,0,0,' + (R() * P.shade) + ')'); g.addColorStop(.5, 'rgba(255,255,255,' + (R() * .05) + ')'); g.addColorStop(1, 'rgba(0,0,0,' + (R() * P.shade) + ')');
+    ctx.fillStyle = g; ctx.fillRect(x, y, w, h);
+    // straight grain: many fine lines that drift gently along the board
+    var n = 14 + Math.floor(R() * 12), i, xx, yy, t;
+    for (i = 0; i < n; i++){
+      var y0 = y + R() * h, amp = h * (.01 + R() * .05), f = (.2 + R() * .7) * 6.283 / w, ph = R() * 6.283;
+      ctx.beginPath();
+      for (xx = x; xx <= x + w + 6; xx += 6){
+        yy = y0 + amp * Math.sin(f * (xx - x) + ph) + (R() - .5) * .35;
+        xx === x ? ctx.moveTo(xx, yy) : ctx.lineTo(xx, yy);
+      }
+      ctx.strokeStyle = P.grain(R); ctx.lineWidth = .35 + R() * .6; ctx.stroke();
+    }
+    // pores: short streaks along the grain
+    for (i = 0; i < w / 6; i++){
+      xx = x + R() * w; yy = y + R() * h;
+      ctx.fillStyle = P.grain(R); ctx.globalAlpha = .45; ctx.fillRect(xx, yy, 6 + R() * 26, .6); ctx.globalAlpha = 1;
+    }
+    // cathedral figure (plain-sawn oak): nested, long, shallow chevrons with rounded tips
+    if (R() < .75){
+      var tip = x + w * (.2 + R() * .75), yc = y + h * (.25 + R() * .5), dir = R() < .5 ? -1 : 1;
+      var rings = 5 + Math.floor(R() * 6), k = 3.5 + R() * 5, e = h * h * (.04 + R() * .18);
+      for (i = 0; i < rings; i++){
+        var ti = tip - dir * i * (4 + R() * 7);
+        ctx.beginPath();
+        for (t = -h; t <= h; t += 1.5){
+          yy = yc + t;
+          xx = ti - dir * k * Math.sqrt(t * t + e) + (R() - .5) * .5;
+          t === -h ? ctx.moveTo(xx, yy) : ctx.lineTo(xx, yy);
+        }
+        ctx.strokeStyle = P.grain(R); ctx.lineWidth = .45 + R() * .7; ctx.stroke();
+      }
+    }
+    // ray flecks
+    ctx.strokeStyle = P.fleck; ctx.lineWidth = .8;
+    for (i = 0; i < w / 14; i++){
+      xx = x + R() * w; yy = y + R() * h; ctx.beginPath(); ctx.moveTo(xx, yy); ctx.lineTo(xx + 2 + R() * 5, yy + (R() - .5)); ctx.stroke();
+    }
+    ctx.restore();
+    // seams: the gap under the long edge and the butt joint
+    ctx.fillStyle = P.seam; ctx.fillRect(x, y + h - 1, w, 1); ctx.fillRect(x + w - 1, y, 1.2, h);
+  }
+
+  /* input: mouse hover and finger drag both wipe stain */
+  Floor.prototype.bind = function(){
+    var self = this;
+    function at(e){ self.ptr = {cx:e.clientX, cy:e.clientY, prev:self.ptr && self.ptr.live ? self.ptr.prev : null, live:true}; self.lastTouch = performance.now(); if (self.o.onTouch) self.o.onTouch(); }
+    this.c.addEventListener('pointerdown', function(e){ if (e.pointerType !== 'mouse') e.preventDefault(); at(e); });
+    this.c.addEventListener('pointermove', at);
+    function off(){ if (self.ptr) self.ptr.live = false; }
+    this.c.addEventListener('pointerleave', off); this.c.addEventListener('pointerup', function(e){ if (e.pointerType !== 'mouse') off(); }); this.c.addEventListener('pointercancel', off);
+  };
+
+  Floor.prototype.toLocal = function(cx, cy){ var r = this.c.getBoundingClientRect(); return {x:cx - r.left, y:cy - r.top}; };
+
+  Floor.prototype.wipe = function(x0, y0, x1, y1, amt){
+    var rad = this.rowH * BRUSH, dist = Math.hypot(x1 - x0, y1 - y0), steps = Math.max(1, Math.ceil(dist / (CELL * 1.5)));
+    var gw = this.gw, gh = this.gh, wet = this.wet, cr = Math.ceil(rad / CELL);
+    for (var s = 0; s <= steps; s++){
+      var px = x0 + (x1 - x0) * s / steps, py = y0 + (y1 - y0) * s / steps, gx = Math.floor(px / CELL), gy = Math.floor(py / CELL);
+      for (var j = -cr; j <= cr; j++) for (var i = -cr * 1.4; i <= cr * 1.4; i++){
+        var X = gx + Math.round(i), Y = gy + j; if (X < 0 || Y < 0 || X >= gw || Y >= gh) continue;
+        var dx = (X + .5) * CELL - px, dy = ((Y + .5) * CELL - py) * 1.25, q = 1 - (dx * dx + dy * dy) / (rad * rad);
+        if (q <= 0) continue;
+        var k = Y * gw + X; wet[k] = Math.min(1.4, wet[k] + amt * q * (.6 + Math.random() * .5) / (steps * .25 + 1));
+      }
+    }
+  };
+
+  Floor.prototype.sandAt = function(x, lane){
+    var gw = this.gw, X0 = Math.max(0, Math.floor((x - 14) / CELL)), X1 = Math.min(gw - 1, Math.floor((x + 6) / CELL));
+    for (var gy = 0; gy < this.gh; gy++){
+      var r = this.row[gy * gw]; if (r < lane || r >= lane + 3) continue;
+      for (var gx = X0; gx <= X1; gx++){ var q = gy * gw + gx; this.stain[q] *= .5; this.wet[q] = 0; if (this.stain[q] < .02) this.stain[q] = 0; }
+    }
+    if (this.dust.length < 140) for (var d = 0; d < 3; d++) this.dust.push({x:x - 6, y:(lane + Math.random() * 3) * this.rowH, vx:-20 - Math.random() * 60, vy:(Math.random() - .5) * 40, life:1});
+  };
+
+  Floor.prototype.flow = function(){
+    var gw = this.gw, gh = this.gh, wet = this.wet, nw = this.nwet, st = this.stain, row = this.row, bd = this.board, pore = this.pore;
+    nw.set(wet);
+    for (var y = 0; y < gh; y++) for (var x = 0; x < gw; x++){
+      var k = y * gw + x, v = wet[k]; if (v < .002) continue;
+      if (x + 1 < gw){ var r = bd[k] === bd[k + 1] ? ALONG : SEAM, m = (v - wet[k + 1]) * r * .5; if (m > 0){ nw[k] -= m; nw[k + 1] += m; } }
+      if (x > 0){ r = bd[k] === bd[k - 1] ? ALONG : SEAM; m = (v - wet[k - 1]) * r * .5; if (m > 0){ nw[k] -= m; nw[k - 1] += m; } }
+      if (y + 1 < gh){ r = row[k] === row[k + gw] ? ACROSS : SEAM; m = (v - wet[k + gw]) * r * .5; if (m > 0){ nw[k] -= m; nw[k + gw] += m; } }
+      if (y > 0){ r = row[k] === row[k - gw] ? ACROSS : SEAM; m = (v - wet[k - gw]) * r * .5; if (m > 0){ nw[k] -= m; nw[k - gw] += m; } }
+    }
+    for (k = 0; k < nw.length; k++){
+      v = nw[k]; if (v < .002){ wet[k] = 0; continue; }
+      var a = v * SOAK * pore[k]; st[k] = Math.min(1, st[k] + a * 1.6); wet[k] = (v - a) * DRY;
+    }
+  };
+
+  Floor.prototype.coverage = function(){ var s = 0, st = this.stain; for (var k = 0; k < st.length; k += 3) s += st[k] > .5 ? 1 : 0; return s / (st.length / 3); };
+
+  Floor.prototype.tick = function(now, dt){
+    if (!this.w) return;
+    var p = this.ptr;
+    if (p && p.live){
+      var L = this.toLocal(p.cx, p.cy);
+      if (p.prev) this.wipe(p.prev.x, p.prev.y, L.x, L.y, .9); else this.wipe(L.x, L.y, L.x, L.y, .6);
+      p.prev = L;
+    } else if (p) p.prev = null;
+    var idle = now - this.lastTouch > IDLE;
+    if (idle && this.o.auto){
+      if (this.mode === 'stain'){
+        var a = this.auto;
+        if (!a || a.done){
+          if (this.coverage() > SAND_AT){ this.mode = 'sand'; this.sand = {lane:0, x:-20}; }
+          else {
+            // rag works with the grain along the least-stained course
+            var best = 0, bestV = 2, rows = Math.ceil(this.h / this.rowH);
+            for (var r = 0; r < rows; r++){ var s = 0, n = 0; for (var gy = Math.floor(r * this.rowH / CELL); gy < Math.min(this.gh, (r + 1) * this.rowH / CELL); gy++) for (var gx = 0; gx < this.gw; gx += 2){ s += this.stain[gy * this.gw + gx]; n++; } if (n && s / n < bestV - .02 * Math.random()){ bestV = s / n; best = r; } }
+            // pick up where the stain stops on that course and work toward the raw wood
+            var gyc = Math.min(this.gh - 1, Math.floor((best + .5) * this.rowH / CELL)), sx = 0;
+            while (sx < this.gw && this.stain[gyc * this.gw + sx] > .5) sx++;
+            this.auto = a = {y:(best + .5) * this.rowH, x:Math.max(-30, sx * CELL - 60), dir:1, ph:Math.random() * 6, done:false, prev:null};
+          }
+        }
+        if (this.mode === 'stain'){
+          a.x += a.dir * AUTO_SPEED * dt;
+          var yy = a.y + Math.sin(a.x * .012 + a.ph) * this.rowH * .45;
+          if (a.prev) this.wipe(a.prev.x, a.prev.y, a.x, yy, .8);
+          a.prev = {x:a.x, y:yy};
+          if (a.x < -40 || a.x > this.w + 40) a.done = true;
+        }
+      } else {
+        var S = this.sand; S.x += SAND_SPEED * dt;
+        this.sandAt(S.x, S.lane);
+        if (S.x > this.w + 20){ S.lane += 3; S.x = -20; if (S.lane * this.rowH > this.h){ this.mode = 'stain'; this.auto = null; } }
+      }
+    }
+    this.flow();
+    this.draw(dt);
+  };
+
+  Floor.prototype.draw = function(dt){
+    var ctx = this.ctx, d = this.dpr, W = this.c.width, H = this.c.height, gw = this.gw, gh = this.gh;
+    var data = this.img.data, st = this.stain, wet = this.wet;
+    for (var k = 0, n = gw * gh; k < n; k++){
+      var a = Math.min(1, st[k] + wet[k] * .9);
+      data[k * 4 + 3] = a * 255; data[k * 4] = Math.min(255, wet[k] * 255);   // red channel carries wetness
+    }
+    this.mctx.putImageData(this.img, 0, 0);
+    var t = this.tmp.getContext('2d');
+    t.setTransform(1, 0, 0, 1, 0, 0); t.globalCompositeOperation = 'source-over'; t.clearRect(0, 0, W, H);
+    t.imageSmoothingEnabled = true; t.filter = 'blur(' + (1.6 * d) + 'px)'; t.drawImage(this.mask, 0, 0, W, H); t.filter = 'none';
+    t.globalCompositeOperation = 'source-in'; t.drawImage(this.stained, 0, 0);
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalCompositeOperation = 'source-over';
+    ctx.drawImage(this.raw, 0, 0); ctx.drawImage(this.tmp, 0, 0);
+    // fresh stain sits darker and glossier until it soaks in
+    ctx.globalCompositeOperation = 'multiply'; ctx.globalAlpha = .22; ctx.drawImage(this.wetMask(), 0, 0, W, H); ctx.globalAlpha = 1;
+    ctx.globalCompositeOperation = 'source-over';
+    // sanding dust
+    if (this.dust.length){
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+      for (var i = this.dust.length - 1; i >= 0; i--){
+        var p = this.dust[i]; p.x += p.vx * (dt || .016); p.y += p.vy * (dt || .016); p.vx *= .96; p.vy *= .96; p.life -= (dt || .016) * .9;
+        if (p.life <= 0){ this.dust.splice(i, 1); continue; }
+        ctx.fillStyle = 'rgba(236,214,178,' + (p.life * .55) + ')'; ctx.beginPath(); ctx.arc(p.x, p.y, 1.2 + (1 - p.life) * 3.5, 0, 6.283); ctx.fill();
+      }
+    }
+  };
+
+  Floor.prototype.wetMask = function(){
+    if (!this.wm){ this.wm = document.createElement('canvas'); }
+    var wm = this.wm; if (wm.width !== this.gw || wm.height !== this.gh){ wm.width = this.gw; wm.height = this.gh; this.wimg = wm.getContext('2d').createImageData(this.gw, this.gh); }
+    var d = this.wimg.data, wet = this.wet;
+    for (var k = 0; k < wet.length; k++){ var v = Math.min(1, wet[k] * 1.4); var c = 255 - v * 150; d[k * 4] = c; d[k * 4 + 1] = c * .9; d[k * 4 + 2] = c * .8; d[k * 4 + 3] = 255; }
+    wm.getContext('2d').putImageData(this.wimg, 0, 0); return wm;
+  };
+
+  /* half-stained start: courses finished to a ragged line, like a job in progress */
+  function halfDone(f){
+    var gw = f.gw, R = rng(91), ends = [];
+    for (var r = 0; r < 40; r++) ends.push(f.w * (.38 + R() * .3));
+    for (var gy = 0; gy < f.gh; gy++) for (var gx = 0; gx < gw; gx++){
+      var k = gy * gw + gx, e = ends[f.row[k]] + Math.sin(gy * 1.7) * 6;
+      if ((gx + .5) * CELL < e) f.stain[k] = 1;
+    }
+  }
+
+  var hero = document.querySelector('#hero-floor canvas'), hint = document.querySelector('.hint');
+  if (hero){
+    floors.push(new Floor(hero, {seed:4242, auto:true, rowH:function(w){ return w < 720 ? 30 : 36; }, start:halfDone, onTouch:function(){ hint && hint.classList.add('gone'); }}));
+  }
+  document.querySelectorAll('.course canvas').forEach(function(cv, i){
+    floors.push(new Floor(cv, {seed:900 + i * 31, auto:true, rowH:function(){ return cv.getBoundingClientRect().height / 2; }, start:function(f){ if (i % 2) halfDone(f); }}));
+  });
+
+  function sizeAll(){ floors.forEach(function(f){ f.build(); }); }
+  sizeAll();
+  addEventListener('resize', sizeAll);
+  document.querySelectorAll('.floor-fallback').forEach(function(el){ el.style.display = 'none'; });
+
+  if (reduce){
+    // still frame; touching still stains
+    floors.forEach(function(f){ f.o.auto = false; });
+  }
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ floors.forEach(function(f){ if (f.c === e.target) f.visible = e.isIntersecting; }); }); kick(); });
+    floors.forEach(function(f){ io.observe(f.c); });
+  } else floors.forEach(function(f){ f.visible = true; });
+
+  var running = false, last = 0;
+  function loop(now){
+    var dt = Math.min(.05, (now - last) / 1000 || .016); last = now;
+    var any = false;
+    floors.forEach(function(f){ if (f.visible && !document.hidden){ any = true; f.tick(now, dt); } });
+    if (any) requestAnimationFrame(loop); else running = false;
+  }
+  function kick(){ if (!running){ running = true; last = performance.now(); requestAnimationFrame(loop); } }
+  document.addEventListener('visibilitychange', kick);
+  kick();
+})();
+
+/* ---------- Estimate form → text message ---------- */
+(function(){
+  var form = document.getElementById('est'); if (!form) return;
+  var NUM = '+14108450812', sent = document.getElementById('sent'), out = document.getElementById('msg');
+  function need(id){
+    var el = document.getElementById(id), f = document.getElementById('f-' + id), ok = el.value.trim().length > 0;
+    f.classList.toggle('bad', !ok); el.setAttribute('aria-invalid', ok ? 'false' : 'true');
+    if (!ok) el.setAttribute('aria-describedby', 'e-' + id); else el.removeAttribute('aria-describedby');
+    return ok;
+  }
+  ['name', 'town'].forEach(function(id){ document.getElementById(id).addEventListener('input', function(){ if (document.getElementById('f-' + id).classList.contains('bad')) need(id); }); });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var okN = need('name'), okT = need('town');
+    if (!okN || !okT){ document.getElementById(okN ? 'town' : 'name').focus(); return; }
+    var jobs = [].slice.call(form.querySelectorAll('input[name=job]:checked')).map(function(i){ return i.value; });
+    var notes = document.getElementById('notes').value.trim();
+    var msg = 'Hi Kevin, I\'d like a free estimate.\nName: ' + document.getElementById('name').value.trim() +
+      '\nTown: ' + document.getElementById('town').value.trim() +
+      '\nJob: ' + (jobs.length ? jobs.join(', ') : 'Not sure yet') +
+      (notes ? '\nAbout the floor: ' + notes : '') + '\n(Photo of the floor attached)';
+    out.textContent = msg; sent.classList.add('on');
+    location.href = 'sms:' + NUM + '?&body=' + encodeURIComponent(msg);
+  });
+  document.getElementById('copy').addEventListener('click', function(){
+    var b = this, t = out.textContent;
+    try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Copied'; }, function(){ b.textContent = 'Press and hold the message to copy'; }); }
+    catch (err){ b.textContent = 'Press and hold the message to copy'; }
+  });
+})();
+</script>
+</body>
+</html>
