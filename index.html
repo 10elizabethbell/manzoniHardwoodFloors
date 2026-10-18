@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Manzoni Hardwood Floors · Northern NJ</title>
 <meta name="description" content="Hardwood floor installation, sand and refinish, and repairs in Northern New Jersey. Fully insured. Free estimates. Call or text Kevin at 410-845-0812.">
-<meta name="theme-color" content="#f4eee4">
+<meta name="theme-color" content="#f4f2ec">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Manzoni Hardwood Floors">
 <meta property="og:description" content="Installation, sand & refinish, repairs. Northern NJ. Fully insured, free estimates. Call or text Kevin.">
@@ -18,8 +18,8 @@
 <style>
 /* ---------- Tokens ---------- */
 :root{
-  --ground:#f4eee4;      /* trim-white wall, warm */
-  --ground-2:#ebe2d4;    /* sanded oak dust */
+  --ground:#f4f2ec;      /* trim-white wall */
+  --ground-2:#e9e5dc;    /* sanded oak dust */
   --ink:#2e1f15;         /* walnut ink */
   --ink-soft:#5f4838;
   --walnut:#4a2f1e;      /* Special Walnut */
@@ -60,7 +60,7 @@ p{margin:0}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:max(14px,env(safe-area-inset-top));padding-bottom:14px}
 .mark{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
 .mark b{font-weight:900;font-size:21px;letter-spacing:.01em;text-transform:uppercase}
-.mark span{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
+.mark span{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
 .tel{display:flex;align-items:center;min-height:44px;padding:0 2px;font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tel:hover{color:var(--tape)}
 
@@ -90,7 +90,6 @@ section{padding:64px 0}
 /* services: rows, only the arrow reacts */
 .rows{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--seam)}
 .rows li{position:relative;border-bottom:1px solid var(--seam)}
-.rows li::after{content:"";position:absolute;bottom:-1px;width:1px;height:12px;background:var(--seam);left:var(--joint,40%)}
 .row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:10px 0;text-decoration:none;-webkit-tap-highlight-color:transparent}
 .row strong{font-size:clamp(24px,6.6vw,34px);font-weight:820;text-transform:uppercase;letter-spacing:-.015em;line-height:1}
 .arrow{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--ground-2);color:var(--walnut);transition:background-color .18s,color .18s}
@@ -106,9 +105,11 @@ section{padding:64px 0}
 .care p.spec{font-size:17px;font-weight:750;color:var(--oak);margin-top:26px}
 
 /* work: photos set into the floor like an inlay */
-.inlays{display:grid;gap:18px;margin-top:28px}
-.inlay{margin:0;padding:10px;border-radius:4px;background:var(--walnut) var(--strip,none) center/cover;box-shadow:0 18px 30px -18px rgba(46,31,21,.55),inset 0 0 0 1px rgba(20,10,5,.35)}
-.inlay img{width:100%;border-radius:2px;background:#5a3b27;user-select:none;-webkit-user-drag:none}
+.field-wrap{position:relative;margin:28px -20px 0;padding:22px 20px;background:#3f2819;overflow:hidden}
+.field-wrap canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.inlays{position:relative;display:grid;gap:22px}
+.inlay{margin:0;padding:6px;background:#d3b081;box-shadow:inset 0 1px 3px rgba(40,22,10,.6),0 0 0 2px #24150c}
+.inlay img{width:100%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.3);background:#5a3b27;user-select:none;-webkit-user-drag:none}
 .fb{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;min-height:68px;padding:12px 20px;border-radius:var(--radius);background:var(--ground-2);border:2px solid var(--walnut);text-decoration:none;font-weight:800;font-size:18px;transition:border-color .18s,color .18s}
 .fb .arrow{background:var(--walnut);color:#f7efe2}
 .fb:hover{border-color:var(--tape);color:var(--tape)}
@@ -135,33 +136,33 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px}
-.chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border:2px solid rgba(74,47,30,.28);border-radius:var(--radius);background:#fffdf9;font-weight:650;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}
+.chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border:2px solid rgba(74,47,30,.28);border-radius:var(--radius);background:linear-gradient(var(--walnut),var(--walnut)) left/0% 100% no-repeat #fffdf9;font-weight:650;cursor:pointer;transition:border-color .15s,background-size .35s cubic-bezier(.2,.7,.2,1),color .2s}
 .chip span::before{content:"";width:16px;height:16px;border-radius:3px;border:2px solid var(--ink-soft);flex:none;transition:background-color .15s,border-color .15s}
 .chip:hover span{border-color:var(--tape)}
 .chip input:focus-visible+span{border-color:var(--tape);box-shadow:0 0 0 3px rgba(42,103,168,.22)}
-.chip input:checked+span{background:var(--walnut);border-color:var(--walnut);color:#f7efe2}
+.chip input:checked+span{background-size:100% 100%;border-color:var(--walnut);color:#f7efe2}
 .chip input:checked+span::before{background:var(--oak);border-color:var(--oak)}
 .chip input:checked:hover+span{border-color:var(--tape)}
-.err{display:none;margin-top:6px;color:#a3321c;font-weight:650;font-size:15px}
+.err{display:none;margin-top:6px;color:#a3321c;font-weight:650;font-size:14px}
 .bad .err{display:block}
 .bad input{border-color:#a3321c}
 form .btn{width:100%}
 form .btn:hover,form .btn:focus-visible{border-color:var(--tape);box-shadow:0 0 0 3px rgba(42,103,168,.22)}
-.sub{font-size:15px;color:var(--ink-soft);margin-top:10px}
+.sub{font-size:16px;color:var(--ink-soft);margin-top:10px}
 .sent{display:none;margin-top:4px;padding:16px;border-radius:var(--radius);background:#fffdf9;border:1px solid var(--seam)}
 .sent.on{display:block}
-.sent pre{white-space:pre-wrap;font:400 15px/1.45 var(--font);margin:10px 0 12px;color:var(--ink-soft)}
+.sent pre{white-space:pre-wrap;font:400 16px/1.45 var(--font);margin:10px 0 12px;color:var(--ink-soft)}
 .sent .row2{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
-.linkbtn{min-height:44px;padding:0 14px;border-radius:var(--radius);border:2px solid rgba(74,47,30,.28);background:transparent;font:700 15px var(--font);color:var(--ink);cursor:pointer}
+.linkbtn{min-height:44px;padding:0 14px;border-radius:var(--radius);border:2px solid rgba(74,47,30,.28);background:transparent;font:700 16px var(--font);color:var(--ink);cursor:pointer}
 .linkbtn:hover,.linkbtn:focus-visible{border-color:var(--tape)}
+.linkbtn-a{display:inline-flex;align-items:center;text-decoration:none}
+.lede{font-size:17px;margin-top:16px;max-width:30ch;color:var(--ink-soft)}
 
 /* close */
 .close{padding-bottom:40px}
 .close h2{font-size:clamp(40px,12vw,104px);line-height:.88}
 .close .where{margin-top:18px;font-size:20px;font-weight:650;color:var(--ink-soft)}
 .close .cta{max-width:420px}
-.close .bigtel{display:inline-block;margin-top:22px;font-size:clamp(28px,8vw,44px);font-weight:850;text-decoration:none;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
-.close .bigtel:hover{color:var(--tape)}
 
 /* footer */
 footer{background:var(--walnut-deep);color:#e6d4bd;padding:34px 0 calc(34px + env(safe-area-inset-bottom));font-size:16px}
@@ -173,27 +174,27 @@ footer small{color:#bfa78d;font-size:14px}
 
 /* ---------- Desktop ---------- */
 @media (min-width:720px){
-  .wrap{padding:0 40px}
+  .wrap{padding-left:40px;padding-right:40px}
   .cta{grid-template-columns:auto auto;justify-content:start}
-  .inlays{grid-template-columns:1.38fr 1fr;align-items:start}
+  .inlays{grid-template-columns:1.337fr 1.065fr;align-items:start}
+  .field-wrap{margin-left:0;margin-right:0;padding:36px}
   .course{height:64px}
   .tel{font-size:18px}
 }
 @media (min-width:1024px){
-  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);min-height:min(88svh,780px)}
+  .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);min-height:min(88svh,780px)}
   .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:40px 48px 64px max(40px,calc((100vw - 1180px)/2 + 40px))}
   .floor-wrap{height:auto;min-height:520px}
-  .hero h1{font-size:clamp(84px,9.4vw,136px)}
+  .hero h1{font-size:clamp(84px,8.4vw,120px)}
   section{padding:104px 0}
   .split{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
   .split .rows,.split .steps{margin-top:0}
+  .care .split p:first-child{margin-top:0}
   .estimate .split form{margin-top:0}
   .close .inner{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:end}
-  .rows li:nth-child(1){--joint:62%}.rows li:nth-child(2){--joint:28%}.rows li:nth-child(3){--joint:79%}
 }
-.rows li:nth-child(1){--joint:66%}.rows li:nth-child(2){--joint:24%}.rows li:nth-child(3){--joint:81%}
 
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -202,7 +203,7 @@ THESIS: Kevin takes a floor from torn-up to Special Walnut and three coats of po
 OWN-WORLD: A racked-out hardwood floor seen from above: random-length oak strips, staggered joints, Special Walnut wiped into raw sanded oak. Trim-white walls (the cream ground), walnut ink, painter's-tape blue only where the visitor touches a control.
 STORY: The visitor stains the floor with a finger, sees two of Kevin's real jobs set into the floor like inlays, learns it's three steps and free to ask, and texts him a photo.
 FIRST VIEWPORT: Name + tap-to-call number up top; "Start to finish." as the one focal point; one line of promise; "Text Kevin a photo" (solid) and "Free estimate" (outline); a strip of floor along the bottom that is being stained right now and stains wherever you drag.
-FORM: Static single file. One shared animation loop drives the hero floor and the course dividers (the same engine). Wet stain spreads fast along the grain, slowly across, barely over seams; a sanding pass lifts it back to raw so there's always floor to stain.
+FORM: Concept roll fd77705c (persuade) assigned candidate 3, racked boards; fused with the stain-wipe act. Static single file. One shared animation loop drives the hero floor and the course dividers (the same engine). Wet stain spreads fast along the grain, slowly across, barely over seams; a sanding pass lifts it back to raw so there's always floor to stain.
 -->
 <header class="wrap top">
   <a class="mark" href="#top" aria-label="Manzoni Hardwood Floors, back to top"><b>Manzoni</b><span>Hardwood Floors</span></a>
@@ -215,7 +216,7 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
     <h1>Start to finish.</h1>
     <p class="promise">I handle your floor myself, from the first board pulled to the last coat of poly, and I treat your home like it's my own.</p>
     <div class="cta">
-      <a class="btn btn-solid" data-sms="Hi Kevin, I found your website. Here's a photo of my floor. I'm looking for:" href="sms:+14108450812">
+      <a class="btn btn-solid" data-sms="Hi Kevin, I found your website. I'll send a photo of my floor. I'm looking for:" href="sms:+14108450812">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
         Text Kevin a photo
       </a>
@@ -225,7 +226,7 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
   <div class="floor-wrap" id="hero-floor">
     <div class="floor-fallback" aria-hidden="true"></div>
     <canvas aria-label="A hardwood floor. Drag across it to wipe on Special Walnut stain." role="img"></canvas>
-    <p class="hint" aria-hidden="true">Drag to stain</p>
+    <p class="hint" aria-hidden="true">Wipe on the stain</p>
   </div>
 </div>
 
@@ -246,21 +247,23 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
 <div class="course" aria-hidden="true"><canvas></canvas></div>
 
 <section class="care">
-  <div class="wrap">
+  <div class="wrap split">
     <h2>Big repairs are part of the job</h2>
-    <p>When boards are damaged, I don't sand around them. I pull them, weave in new ones, and sand the whole floor together so you can't tell where the old floor ends and the new one starts.</p>
+    <div>
+    <p>I'd rather fix a bad spot right than sand around it. I treat your floor like the one I walk on every day, and your home like I'm a guest in it.</p>
     <p class="spec">Last job: Special Walnut stain, 3 coats of polyurethane</p>
+    </div>
   </div>
 </section>
 
 <section id="work">
   <div class="wrap">
     <h2>My work</h2>
-    <div class="inlays">
+    <div class="field-wrap"><canvas class="field" aria-hidden="true"></canvas><div class="inlays">
       <figure class="inlay"><img src="img/repair.webp" width="936" height="700" alt="A living room floor torn up in front of an arched wooden door, with new oak boards stacked and ready to weave in" loading="lazy" decoding="async" draggable="false"></figure>
       <figure class="inlay"><img src="img/finished.webp" width="720" height="676" alt="A finished floor in a dark walnut stain, seen from the top of a curved white staircase" loading="lazy" decoding="async" draggable="false"></figure>
-    </div>
-    <a class="fb" href="https://facebook.com/profile.php?id=100057250275824" rel="noopener">Click to see more of my work.<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div></div>
+    <a class="fb" href="https://facebook.com/profile.php?id=100057250275824" rel="noopener">See more of my work on Facebook<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
   </div>
 </section>
 
@@ -271,8 +274,8 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
     <h2>How it works</h2>
     <ol class="steps">
       <li><b>Text me a photo of your floor.</b><span>Tell me what you're hoping for.</span></li>
-      <li><b>I come look, and the estimate is free.</b><span>You'll know what the job needs before anything starts.</span></li>
-      <li><b>I do it start to finish.</b><span>Sanding, repairs, stain and finish, all by me.</span></li>
+      <li><b>The estimate is free.</b><span>You'll know what the job needs before anything starts.</span></li>
+      <li><b>I do the work.</b><span>Sanding, repairs, stain and finish, all by me.</span></li>
     </ol>
   </div>
 </section>
@@ -281,17 +284,17 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
   <div class="wrap split">
     <div>
       <h2>Free estimate</h2>
-      <p class="sub" style="font-size:17px;margin-top:16px;max-width:30ch">Fill this in and it becomes a text to me. Add a photo of the floor before you send it.</p>
+      <p class="lede">Add a photo of the floor before you send it.</p>
     </div>
     <form id="est" novalidate>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
-        <input type="text" id="name" name="name" autocomplete="name" placeholder="First and last">
+        <input type="text" id="name" name="name" maxlength="80" autocomplete="name" placeholder="First and last">
         <p class="err" id="e-name">Please add your name so I know who's texting.</p>
       </div>
       <div class="field" id="f-town">
         <label for="town">Town</label>
-        <input type="text" id="town" name="town" autocomplete="address-level2" placeholder="Where's the floor?">
+        <input type="text" id="town" name="town" maxlength="80" autocomplete="address-level2" placeholder="Where's the floor?">
         <p class="err" id="e-town">Please add your town so I know where the job is.</p>
       </div>
       <fieldset>
@@ -314,7 +317,7 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
       <div class="sent" id="sent" role="status" aria-live="polite">
         <b>Your text is ready.</b> If your messages app didn't open, send this to 410-845-0812:
         <pre id="msg"></pre>
-        <div class="row2"><button class="linkbtn" type="button" id="copy">Copy message</button><a class="linkbtn" style="display:inline-flex;align-items:center;text-decoration:none" href="tel:+14108450812">Call instead</a></div>
+        <div class="row2"><button class="linkbtn" type="button" id="copy">Copy message</button><a class="linkbtn linkbtn-a" href="tel:+14108450812">Call instead</a></div>
       </div>
     </form>
   </div>
@@ -329,8 +332,8 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
       <p class="where">Northern New Jersey. Call or text Kevin.</p>
     </div>
     <div>
-      <a class="bigtel" href="tel:+14108450812">410-845-0812</a>
-      <div class="cta"><a class="btn btn-solid" data-sms="Hi Kevin, I found your website and I'd like a free estimate." href="sms:+14108450812">Text Kevin</a></div>
+      <div class="cta"><a class="btn btn-solid" data-sms="Hi Kevin, I found your website and I'd like a free estimate." href="sms:+14108450812"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+        Text Kevin</a></div>
     </div>
   </div>
 </section>
@@ -359,14 +362,16 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
 (function(){
   /* tunables */
   var CELL = 5;            // stain grid cell, css px
-  var ALONG = 0.22;        // wet flow along the grain (same board)
+  var ALONG = 0.12;        // wet flow along the grain (same board)
   var ACROSS = 0.05;       // wet flow across the board width
   var SEAM = 0.004;        // wet flow over a seam (next row or butt joint)
   var SOAK = 0.07;         // share of wet stain absorbed per tick
   var DRY = 0.992;         // wet evaporation per tick
   var BRUSH = 1.25;        // rag radius, in rows
-  var AUTO_SPEED = 560;    // rag speed, css px/s
-  var SAND_SPEED = 340;    // sander speed, css px/s
+  var AUTO_SPEED = 240;    // rag speed, css px/s
+  var SAND_SPEED = 260;    // sander speed, css px/s
+  var HOLD = 3200;         // ms the finished floor is left alone before sanding
+  var RAG = 0.7;           // auto rag radius, in rows (one course at a time)
   var SAND_AT = 0.9;       // coverage that starts a sanding pass
   var IDLE = 2600;         // ms after a touch before the floor works by itself
 
@@ -514,8 +519,8 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
 
   Floor.prototype.toLocal = function(cx, cy){ var r = this.c.getBoundingClientRect(); return {x:cx - r.left, y:cy - r.top}; };
 
-  Floor.prototype.wipe = function(x0, y0, x1, y1, amt){
-    var rad = this.rowH * BRUSH, dist = Math.hypot(x1 - x0, y1 - y0), steps = Math.max(1, Math.ceil(dist / (CELL * 1.5)));
+  Floor.prototype.wipe = function(x0, y0, x1, y1, amt, size){
+    var rad = this.rowH * (size || BRUSH), dist = Math.hypot(x1 - x0, y1 - y0), steps = Math.max(1, Math.ceil(dist / (CELL * 1.5)));
     var gw = this.gw, gh = this.gh, wet = this.wet, cr = Math.ceil(rad / CELL);
     for (var s = 0; s <= steps; s++){
       var px = x0 + (x1 - x0) * s / steps, py = y0 + (y1 - y0) * s / steps, gx = Math.floor(px / CELL), gy = Math.floor(py / CELL);
@@ -558,6 +563,7 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
   Floor.prototype.tick = function(now, dt){
     if (!this.w) return;
     var p = this.ptr;
+    if (this.o.still && !(p && p.live) && !this.wetLeft) return;
     if (p && p.live){
       var L = this.toLocal(p.cx, p.cy);
       if (p.prev) this.wipe(p.prev.x, p.prev.y, L.x, L.y, .9); else this.wipe(L.x, L.y, L.x, L.y, .6);
@@ -568,7 +574,10 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
       if (this.mode === 'stain'){
         var a = this.auto;
         if (!a || a.done){
-          if (this.coverage() > SAND_AT){ this.mode = 'sand'; this.sand = {lane:0, x:-20}; }
+          if (this.coverage() > SAND_AT){
+            if (!this.heldAt) this.heldAt = now;
+            if (now - this.heldAt > HOLD){ this.heldAt = 0; this.mode = 'sand'; this.sand = {lane:0, x:-20}; }
+          }
           else {
             // rag works with the grain along the least-stained course
             var best = 0, bestV = 2, rows = Math.ceil(this.h / this.rowH);
@@ -579,10 +588,10 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
             this.auto = a = {y:(best + .5) * this.rowH, x:Math.max(-30, sx * CELL - 60), dir:1, ph:Math.random() * 6, done:false, prev:null};
           }
         }
-        if (this.mode === 'stain'){
+        if (this.mode === 'stain' && a && !a.done){
           a.x += a.dir * AUTO_SPEED * dt;
-          var yy = a.y + Math.sin(a.x * .012 + a.ph) * this.rowH * .45;
-          if (a.prev) this.wipe(a.prev.x, a.prev.y, a.x, yy, .8);
+          var yy = a.y + Math.sin(a.x * .012 + a.ph) * this.rowH * .18;
+          if (a.prev) this.wipe(a.prev.x, a.prev.y, a.x, yy, .7, RAG);
           a.prev = {x:a.x, y:yy};
           if (a.x < -40 || a.x > this.w + 40) a.done = true;
         }
@@ -593,6 +602,7 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
       }
     }
     this.flow();
+    if (this.o.still){ var wl = 0; for (var q = 0; q < this.wet.length; q += 7) wl += this.wet[q]; this.wetLeft = wl > .01; }
     this.draw(dt);
   };
 
@@ -650,9 +660,13 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
     floors.push(new Floor(cv, {seed:900 + i * 31, auto:true, rowH:function(){ return cv.getBoundingClientRect().height / 2; }, start:function(f){ if (i % 2) halfDone(f); }}));
   });
 
+  var field = document.querySelector('canvas.field');
+  if (field) floors.push(new Floor(field, {seed:5150, auto:false, still:true, rowH:function(w){ return w < 720 ? 30 : 36; }, start:function(f){ f.stain.fill(1); }}));
+
   function sizeAll(){ floors.forEach(function(f){ f.build(); }); }
   sizeAll();
   addEventListener('resize', sizeAll);
+  if ('ResizeObserver' in window){ var ro = new ResizeObserver(sizeAll); floors.forEach(function(f){ ro.observe(f.c); }); }
   document.querySelectorAll('.floor-fallback').forEach(function(el){ el.style.display = 'none'; });
 
   if (reduce){
@@ -696,14 +710,15 @@ FORM: Static single file. One shared animation loop drives the hero floor and th
     var msg = 'Hi Kevin, I\'d like a free estimate.\nName: ' + document.getElementById('name').value.trim() +
       '\nTown: ' + document.getElementById('town').value.trim() +
       '\nJob: ' + (jobs.length ? jobs.join(', ') : 'Not sure yet') +
-      (notes ? '\nAbout the floor: ' + notes : '') + '\n(Photo of the floor attached)';
+      (notes ? '\nAbout the floor: ' + notes : '') + '\nI\'ll send a photo of the floor.';
     out.textContent = msg; sent.classList.add('on');
     location.href = 'sms:' + NUM + '?&body=' + encodeURIComponent(msg);
   });
   document.getElementById('copy').addEventListener('click', function(){
     var b = this, t = out.textContent;
-    try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Copied'; }, function(){ b.textContent = 'Press and hold the message to copy'; }); }
-    catch (err){ b.textContent = 'Press and hold the message to copy'; }
+    function reset(){ setTimeout(function(){ b.textContent = 'Copy message'; }, 2500); }
+    try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Copied'; reset(); }, function(){ b.textContent = 'Press and hold the message to copy'; reset(); }); }
+    catch (err){ b.textContent = 'Press and hold the message to copy'; reset(); }
   });
 })();
 </script>
