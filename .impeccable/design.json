@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T23:51:01.144001+00:00",
+  "title": "Design System: Manzoni Hardwood Floors",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Trim-White Wall",
+        "canonical": "oklch(96.1% 0.008 91)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#252421",
+          "#41403c",
+          "#5f5d59",
+          "#82807b",
+          "#a6a4a0",
+          "#cccac6",
+          "#efeeeb"
+        ]
+      },
+      "ground-2": {
+        "role": "neutral",
+        "displayName": "Sanded Oak Dust",
+        "canonical": "oklch(92.3% 0.013 87)",
+        "tonalRamp": [
+          "#0c0b08",
+          "#26241f",
+          "#423f3a",
+          "#605d56",
+          "#838078",
+          "#a7a49d",
+          "#cdcac4",
+          "#f0eee9"
+        ]
+      },
+      "field-white": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "canonical": "oklch(99.4% 0.006 85)",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#252422",
+          "#41403d",
+          "#5f5d5a",
+          "#82807d",
+          "#a6a4a1",
+          "#cccac8",
+          "#efeeec"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Walnut Ink",
+        "canonical": "oklch(25.5% 0.029 55)",
+        "tonalRamp": [
+          "#110905",
+          "#2c221b",
+          "#4a3d34",
+          "#6a5a4f",
+          "#8e7c71",
+          "#b1a197",
+          "#d5c7bf",
+          "#f8ece4"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Walnut Ink",
+        "canonical": "oklch(42.2% 0.040 56)",
+        "tonalRamp": [
+          "#120903",
+          "#2e2117",
+          "#4d3b2f",
+          "#6e5849",
+          "#937b6a",
+          "#b5a091",
+          "#d9c6ba",
+          "#fbebe0"
+        ]
+      },
+      "walnut": {
+        "role": "primary",
+        "displayName": "Special Walnut",
+        "canonical": "oklch(33.3% 0.048 53)",
+        "tonalRamp": [
+          "#140802",
+          "#311f15",
+          "#503a2c",
+          "#725746",
+          "#977967",
+          "#b99e8e",
+          "#ddc5b7",
+          "#feeade"
+        ]
+      },
+      "walnut-deep": {
+        "role": "primary",
+        "displayName": "Walnut Deep",
+        "canonical": "oklch(27.5% 0.034 43)",
+        "tonalRamp": [
+          "#120905",
+          "#2e201b",
+          "#4d3b34",
+          "#6e5850",
+          "#927a71",
+          "#b59f97",
+          "#d9c6bf",
+          "#fbebe5"
+        ]
+      },
+      "on-walnut": {
+        "role": "neutral",
+        "displayName": "Cream on Walnut",
+        "canonical": "oklch(95.5% 0.019 80)",
+        "tonalRamp": [
+          "#0e0b06",
+          "#27231d",
+          "#443f37",
+          "#635d53",
+          "#867f74",
+          "#aaa49a",
+          "#cfcac1",
+          "#f2eee7"
+        ]
+      },
+      "on-walnut-soft": {
+        "role": "neutral",
+        "displayName": "Soft Cream on Walnut",
+        "canonical": "oklch(87.9% 0.037 74)",
+        "tonalRamp": [
+          "#100a03",
+          "#2b2216",
+          "#493e2e",
+          "#695b49",
+          "#8d7e6a",
+          "#b0a290",
+          "#d5c8b9",
+          "#f7ede0"
+        ]
+      },
+      "oak": {
+        "role": "secondary",
+        "displayName": "Raw Sanded Oak",
+        "canonical": "oklch(80.3% 0.070 76)",
+        "tonalRamp": [
+          "#140800",
+          "#312005",
+          "#513b1b",
+          "#735832",
+          "#977b53",
+          "#baa07d",
+          "#ddc7a9",
+          "#feecd2"
+        ]
+      },
+      "tape": {
+        "role": "tertiary",
+        "displayName": "Painter's Tape Blue",
+        "canonical": "oklch(50.7% 0.121 253)",
+        "tonalRamp": [
+          "#000926",
+          "#00244a",
+          "#114171",
+          "#285f9a",
+          "#4a83c2",
+          "#77a8e1",
+          "#a4ceff",
+          "#cff2ff"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Error Red",
+        "canonical": "oklch(48.4% 0.153 33)",
+        "tonalRamp": [
+          "#250000",
+          "#4a0300",
+          "#731d0c",
+          "#9d3723",
+          "#c75a44",
+          "#e78671",
+          "#ffb29f",
+          "#ffdaca"
+        ]
+      },
+      "seam": {
+        "role": "neutral",
+        "displayName": "Seam",
+        "canonical": "rgba(46,31,21,.16)",
+        "tonalRamp": [
+          "rgba(46,31,21,.04)",
+          "rgba(46,31,21,.08)",
+          "rgba(46,31,21,.12)",
+          "rgba(46,31,21,.16)",
+          "rgba(46,31,21,.24)",
+          "rgba(46,31,21,.32)",
+          "rgba(46,31,21,.48)",
+          "rgba(46,31,21,.64)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; desktop clamp(84px, 8.4vw, 120px)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, uppercase; closing name runs clamp(40px, 12vw, 104px) at 0.88."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service row names, uppercase."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default copy; lead paragraphs 17-22px fluid, 31-36ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels, button labels (17px), header phone number (800, tabular)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-lift",
+        "value": "0 6px 16px -8px rgba(54,34,26,.7)",
+        "purpose": "Resting solid walnut buttons only."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(42,103,168,.22)",
+        "purpose": "Inputs, chips and form submit on focus/hover."
+      },
+      {
+        "name": "inlay-set",
+        "value": "inset 0 1px 3px rgba(40,22,10,.6), 0 0 0 2px #24150c",
+        "purpose": "Photo inlays let into the board field."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state",
+        "value": "0.18s",
+        "purpose": "Button, arrow and panel colour/border transitions."
+      },
+      {
+        "name": "field",
+        "value": "0.15s",
+        "purpose": "Input and chip border transitions."
+      },
+      {
+        "name": "stain-wipe",
+        "value": "0.35s cubic-bezier(.2,.7,.2,1)",
+        "purpose": "Checked chip walnut fill wiping in from the left."
+      },
+      {
+        "name": "hint-fade",
+        "value": "0.6s",
+        "purpose": "Hero hint tag fading out on first touch."
+      },
+      {
+        "name": "floor-engine",
+        "value": "one shared requestAnimationFrame loop; CELL 5, ALONG .12, ACROSS .05, SEAM .004, SOAK .07, DRY .992, BRUSH 1.25, RAG .7, AUTO_SPEED 240, SAND_SPEED 260, HOLD 3200, SAND_AT .9, IDLE 2600",
+        "purpose": "Hero floor (auto, half-done start), course dividers (auto, two courses tall), board field (still, fully stained). Off-screen and hidden-tab instances pause; reduced motion disables auto mode but keeps finger staining."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "720px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "Primary text action; walnut fill, tape-blue border on hover.",
+      "html": "<a class=\"ds-btn ds-btn-solid\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z\"/></svg>Text Kevin a photo</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 24px;border-radius:6px;font:750 17px/1.1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;text-decoration:none;border:2px solid #4a2f1e;cursor:pointer;transition:background-color .18s,border-color .18s,color .18s,box-shadow .18s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #2a67a8;outline-offset:3px}.ds-btn-solid{background:#4a2f1e;color:#f7efe2;box-shadow:0 6px 16px -8px rgba(54,34,26,.7)}.ds-btn-solid:hover{background:#36221a;border-color:#2a67a8}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action; walnut outline that turns tape blue on hover.",
+      "html": "<a class=\"ds-btn ds-btn-line\" href=\"#\">Free estimate</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 24px;border-radius:6px;font:750 17px/1.1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;text-decoration:none;border:2px solid #4a2f1e;cursor:pointer;transition:background-color .18s,border-color .18s,color .18s,box-shadow .18s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #2a67a8;outline-offset:3px}.ds-btn-line{background:transparent;color:#4a2f1e}.ds-btn-line:hover{border-color:#2a67a8;color:#2a67a8}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Field-white input; blue border on hover, blue border plus halo on focus.",
+      "html": "<label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\" placeholder=\"First and last\">",
+      "css": ".ds-label{display:block;font:750 16px/1.3 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#2e1f15;margin-bottom:8px}.ds-input{width:100%;min-height:54px;padding:14px 16px;font:400 17px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#2e1f15;background:#fffdf9;border:2px solid rgba(74,47,30,.28);border-radius:6px;caret-color:#2a67a8;transition:border-color .15s,box-shadow .15s}.ds-input::placeholder{color:#7d6656}.ds-input:hover{border-color:#2a67a8}.ds-input:focus{outline:none;border-color:#2a67a8;box-shadow:0 0 0 3px rgba(42,103,168,.22)}"
+    },
+    {
+      "name": "Job Chip",
+      "kind": "chip",
+      "refersTo": "chip-job",
+      "description": "Checkbox chip; checking wipes a walnut fill in from the left like stain.",
+      "html": "<label class=\"ds-chip\"><input type=\"checkbox\"><span>Sand &amp; refinish</span></label> <label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Repairs</span></label>",
+      "css": ".ds-chip{position:relative;display:inline-block;font:650 17px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#2e1f15}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px}.ds-chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border:2px solid rgba(74,47,30,.28);border-radius:6px;background:linear-gradient(#4a2f1e,#4a2f1e) left/0% 100% no-repeat #fffdf9;cursor:pointer;transition:border-color .15s,background-size .35s cubic-bezier(.2,.7,.2,1),color .2s}.ds-chip span::before{content:'';width:16px;height:16px;border-radius:3px;border:2px solid #5f4838;flex:none}.ds-chip:hover span{border-color:#2a67a8}.ds-chip input:focus-visible+span{border-color:#2a67a8;box-shadow:0 0 0 3px rgba(42,103,168,.22)}.ds-chip input:checked+span{background-size:100% 100%;border-color:#4a2f1e;color:#f7efe2}.ds-chip input:checked+span::before{background:#d9b98c;border-color:#d9b98c}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Wordmark left, tap-to-call number right; no menu, not sticky.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\"><b>Manzoni</b><span>Hardwood Floors</span></a><a class=\"ds-tel\" href=\"#\">410-845-0812</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:#f4f2ec;color:#2e1f15;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-mark{display:flex;flex-direction:column;min-height:44px;justify-content:center;text-decoration:none;color:inherit;line-height:1}.ds-mark b{font-weight:900;font-size:21px;letter-spacing:.01em;text-transform:uppercase}.ds-mark span{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#5f4838;margin-top:4px}.ds-tel{display:flex;align-items:center;min-height:44px;font-weight:800;font-size:16px;text-decoration:none;color:inherit;font-variant-numeric:tabular-nums}.ds-tel:hover{color:#2a67a8}.ds-tel:focus-visible,.ds-mark:focus-visible{outline:3px solid #2a67a8;outline-offset:3px;border-radius:4px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row-arrow",
+      "description": "Full-width link row between seam lines; only the arrow disc reacts.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><strong>Installation</strong><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><strong>Repairs</strong><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li></ul>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;border-top:1px solid rgba(46,31,21,.16);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#2e1f15}.ds-rows li{border-bottom:1px solid rgba(46,31,21,.16)}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:10px 0;text-decoration:none;color:inherit}.ds-row strong{font-size:30px;font-weight:820;text-transform:uppercase;letter-spacing:-.015em;line-height:1}.ds-arrow{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#e9e5dc;color:#4a2f1e;transition:background-color .18s,color .18s}.ds-row:hover,.ds-row:focus-visible{outline:none}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#2a67a8;color:#fff}.ds-row:focus-visible .ds-arrow{outline:3px solid #2a67a8;outline-offset:3px}"
+    },
+    {
+      "name": "Steps",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Numbered steps in oak discs between seam lines.",
+      "html": "<ol class=\"ds-steps\"><li><b>Text me a photo of your floor.</b><span>Tell me what you're hoping for.</span></li><li><b>The estimate is free.</b><span>You'll know what the job needs before anything starts.</span></li></ol>",
+      "css": ".ds-steps{list-style:none;margin:0;padding:0;counter-reset:s;font:400 17px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#2e1f15}.ds-steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:20px 0;border-top:1px solid rgba(46,31,21,.16);counter-increment:s}.ds-steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#d9b98c;color:#2e1f15;font-weight:850;font-size:19px}.ds-steps b{font-size:20px;font-weight:800;line-height:1.25}.ds-steps span{color:#5f4838}"
+    },
+    {
+      "name": "Facebook Panel",
+      "kind": "card",
+      "refersTo": "",
+      "description": "Linked panel with walnut arrow disc; border and text turn blue on hover.",
+      "html": "<a class=\"ds-fb\" href=\"#\">See more of my work on Facebook<span class=\"ds-fb-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-fb{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:12px 20px;border-radius:6px;background:#e9e5dc;border:2px solid #4a2f1e;text-decoration:none;color:#2e1f15;font:800 18px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;transition:border-color .18s,color .18s}.ds-fb-arrow{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#4a2f1e;color:#f7efe2;transition:background-color .18s}.ds-fb:hover,.ds-fb:focus-visible{border-color:#2a67a8;color:#2a67a8;outline:none}.ds-fb:hover .ds-fb-arrow,.ds-fb:focus-visible .ds-fb-arrow{background:#2a67a8}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Floor Is the Page",
+    "overview": "The site is a racked-out hardwood floor seen from above: random-length oak strips, staggered butt joints, Special Walnut wiped into raw sanded oak. Everything else is the room around that floor. The cream ground is the trim-white wall, the text is walnut ink, and painter's-tape blue shows up only where the visitor touches a control, the way tape marks the edges a tradesman is working to. The floor is live: one shared canvas engine draws the boards, lets a finger wipe stain on, and sands the stain back to raw when the floor is nearly done, so there is always floor to stain.\n\nDensity is phone-first and plain-spoken. Heavy uppercase system type, short first-person lines from Kevin, big tap targets (44px floor, 58px buttons), and almost no ornament beyond the wood itself. Depth comes from the floor and from the walnut-coloured bands (care section, footer), not from shadows or cards.\n\nThe first screen carries the name, the number, one focal headline, one line of promise, two actions and the floor. There is no sticky bar; the number lives top-right on the first screen and again in the footer.",
+    "keyCharacteristics": [
+      "Cream wall, walnut ink, oak accents; blue only on interaction.",
+      "System font stack throughout, set very heavy (750-900) and uppercase for headings.",
+      "A single canvas floor engine expressed three ways: hero floor, course dividers, static board field behind the photos.",
+      "Rows divided by thin seam lines instead of cards.",
+      "Flat surfaces; one soft shadow under the solid button."
+    ],
+    "rules": [
+      {
+        "name": "The Tape Rule",
+        "body": "Painter's-tape blue appears only on hover, focus and form outlines (borders, caret, focus halo, the hovered arrow). It is never a resting fill, a heading colour, or a decorative accent. If a screen shows blue with nobody touching it, it is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Wood-Not-Paint Rule",
+        "body": "Every warm colour on the page is a stage of the same floor: raw oak, stain, deep walnut, sanding dust. A new surface colour must be one of these or a wall tone, never a new hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The House Stack Rule",
+        "body": "Every pitch site uses the system font stack (Ellie's house rule). Hierarchy comes from weight, case, size and tracking, never from adding a second family or a web font.",
+        "section": "typography"
+      },
+      {
+        "name": "The Heavy-Headings Rule",
+        "body": "Headings are uppercase at 820-900 weight with negative tracking and line-height under 1. Body copy stays sentence case at 400.",
+        "section": "typography"
+      },
+      {
+        "name": "The First-Screen Number Rule",
+        "body": "The phone number appears once on the first screen, top-right, as a plain tap-to-call link. There is no sticky bar or floating call button. The footer carries the number a second time, with Facebook.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat-Floor Rule",
+        "body": "Surfaces don't float. Use a walnut band, a seam line or the floor itself to separate content; add a shadow only for the solid button or a state.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep tape blue (`tape`) for hover, focus and form outlines only.",
+      "Do use the system font stack for every role and get hierarchy from weight (750-900), uppercase and tight tracking.",
+      "Do drive any new floor surface through the shared Floor engine and its single animation loop, and tune behaviour through the named tunables rather than per-instance code.",
+      "Do separate list content with 1px seam lines and full-width bands rather than cards.",
+      "Do keep tap targets at 44px minimum and primary buttons at 58px.",
+      "Do let only the arrow disc react on service-style rows.",
+      "Do keep warm colours to wall, oak and walnut stages of the floor."
+    ],
+    "donts": [
+      "Don't add a sticky call bar or floating button; the number lives top-right on the first screen and in the footer.",
+      "Don't use blue as a resting fill, heading colour or decoration.",
+      "Don't add a web font or second family.",
+      "Don't start a second `requestAnimationFrame` loop for a floor surface.",
+      "Don't add cards, lifted panels or hover backgrounds to rows.",
+      "Don't reuse the wordmark's tracked 12px uppercase subline as a label above section headings; it belongs to the name only."
+    ]
+  }
+}
